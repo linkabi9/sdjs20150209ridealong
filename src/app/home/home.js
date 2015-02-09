@@ -12,9 +12,8 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngBoilerplate.home', [
-  'ui.router',
-  'plusOne'
+angular.module('ngChatApp.home', [
+    'ui.router'
 ])
 
 /**
@@ -22,24 +21,24 @@ angular.module( 'ngBoilerplate.home', [
  * will handle ensuring they are all available at run-time, but splitting it
  * this way makes each module more "self-contained".
  */
-.config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
-    url: '/home',
-    views: {
-      "main": {
-        controller: 'HomeCtrl',
-        templateUrl: 'home/home.tpl.html'
-      }
-    },
-    data:{ pageTitle: 'Home' }
-  });
-})
+    .config(function config($stateProvider) {
+        $stateProvider.state('home', {
+            url: '/home',
+            views: {
+                "main": {
+                    controller: 'HomeCtrl',
+                    templateUrl: 'home/home.tpl.html'
+                }
+            },
+            data: {pageTitle: 'Home'}
+        });
+    })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope ) {
-})
+    .controller('HomeCtrl', function HomeController($scope) {
+    })
 
 ;
 

@@ -6,6 +6,6 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.use(express.static(__dirname + '/bin'));
+app.use(express.static(__dirname + '/build'));
 
 app.listen(8080);
