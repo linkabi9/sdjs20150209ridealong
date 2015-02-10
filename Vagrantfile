@@ -19,6 +19,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
   
   config.vm.hostname = 'sdjsvm'
-  config.vm.network :private_network, ip: '192.168.55.121'
+  config.vm.network :private_network, ip: '192.168.100.100'
 
 end

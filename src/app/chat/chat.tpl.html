@@ -1,0 +1,20 @@
+<h1 class="page-header">Chat</h1>
+
+<div class="chat-messages">
+    <div ng-repeat="message in collection" ng-style="{color: message.data.color}">
+        <div ng-if="message.type == 'message'">
+            {{message.data.author }}
+            says
+            {{ message.data.text }}
+        </div>
+    </div>
+</div>
+<form ng-submit="sendMessage()" class="row">
+    <div class="col-sm-10 form-group">
+        <input type="text" name="message" ng-model="newMessage" id="newMessage" class="form-control"/>
+    </div>
+    <div class="col-sm-2">
+        <input type="submit" value="Send" class="btn btn-primary btn-block"/>
+    </div>
+</form>
+

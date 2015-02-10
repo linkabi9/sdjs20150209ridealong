@@ -15,3 +15,5 @@ If you don't want to download Vagrant and run the included Vagrantfile, just mak
 - Karma
 - Bower
 - Karma compatible browser
+
+For the live demo make sure to run `node server.js` for the web server and `node chat-server.js` for the chat server used during the ride along.
